@@ -1,0 +1,92 @@
+/* MoodTracker.css */
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 0;
+}
+
+.mood-tracker-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.mood-tracker-container h2 {
+  margin-bottom: 20px;
+  color: #7b5cbf; /* Updated heading color */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px; /* Added padding for better spacing */
+  background-color: #ffffff; /* Added background color */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.mood-entry {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: #7b5cbf; /* Updated label color */
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #7b5cbf;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #5b3b8a;
+}
+
+.advice-container {
+  margin-top: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.advice-container h3 {
+  margin-bottom: 10px;
+  color: #7b5cbf; /* Updated heading color */
+}
+
+.advice-container p {
+  white-space: pre-line; /* To preserve newline characters in the advice string */
+}
+
+h2 {
+  color: #7b5cbf; /* Updated heading color */
+}

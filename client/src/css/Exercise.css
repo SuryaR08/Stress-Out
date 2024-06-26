@@ -1,0 +1,193 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main container to hold the content and footer */
+.main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Exercise container */
+.exercise-container {
+  background-color: #f9f7f8;
+  color: #4a148c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+/* Exercise header */
+.exercise-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #5e35b1; /* Purple */
+}
+
+/* Emotion list */
+.emotion-list {
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+
+/* Emotion buttons */
+.emotion-scroll {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.emotion-scroll button {
+  background-color: #7b1fa2; /* Darker purple */
+  color: #ffffff; /* White */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.emotion-scroll button:hover {
+  background-color: #5e35b1; /* Lighter purple on hover */
+}
+
+.emotion-scroll button.selected {
+  background-color: #512da8; /* Slightly darker purple */
+}
+
+/* Exercise section */
+.exercise {
+  background-color: #ffffff; /* White */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-y: auto; /* Vertical scroll if needed */
+}
+
+/* Exercise title */
+.exercise h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #512da8; /* Darker purple */
+}
+
+/* Exercise item */
+.exercise-item {
+  margin-bottom: 15px;
+}
+
+/* Exercise checkbox */
+.exercise-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Exercise points */
+.exercise-item ul {
+  padding-left: 20px;
+}
+
+.exercise-item ul li {
+  margin-bottom: 5px;
+}
+
+/* Compliment popup */
+.compliment-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff; /* White */
+  color: #4a148c; /* Dark purple */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styles */
+.footer {
+  background-color: #ffb6c1;
+  color: #333;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto;
+}
+
+.footer .footer-text {
+  margin-bottom: 20px;
+}
+
+.footer .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer .social-icons a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.footer .social-icons a .icon {
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.footer .social-icons a:hover {
+  transform: scale(1.1);
+}
+
+.Github_logo {
+  background-image: url("../images/github_logo.png");
+}
+
+.Linkedin_logo {
+  background-image: url("../images/linkedin_logo.png");
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .home-container {
+    padding: 100px 20px;
+  }
+
+  .home-container .content h2 {
+    font-size: 2rem;
+  }
+
+  .home-container .content p {
+    font-size: 1rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .about-container .about-text,
+  .about-container .about-image {
+    flex: unset;
+    width: 100%;
+  }
+
+  .footer .social-icons a .icon {
+    width: 25px;
+    height: 25px;
+  }
+}

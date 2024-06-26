@@ -1,0 +1,135 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.home-container {
+  background-image: url("../images/background-image.jpg");
+  padding: 200px 40px;
+  text-align: center;
+}
+
+.home-container .content h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ffb6c1;
+}
+
+.home-container .content p {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 20px;
+  color: #333;
+}
+
+.about-container .about-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-container .about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-container .about-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.about-container .about-image {
+  flex: 1;
+  background-image: url("../images/about-background.png");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.footer {
+  background-color: #ffb6c1;
+  color: #333;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer .footer-text {
+  margin-bottom: 20px;
+}
+
+.footer .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer .social-icons a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.footer .social-icons a .icon {
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.footer .social-icons a:hover {
+  transform: scale(1.1);
+}
+
+.Github_logo {
+  background-image: url("../images/github_logo.png");
+}
+
+.Linkedin_logo {
+  background-image: url("../images/linkedin_logo.png");
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .home-container {
+    padding: 100px 20px;
+  }
+
+  .home-container .content h2 {
+    font-size: 2rem;
+  }
+
+  .home-container .content p {
+    font-size: 1rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .about-container .about-text,
+  .about-container .about-image {
+    flex: unset;
+    width: 100%;
+  }
+
+  .footer .social-icons a .icon {
+    width: 25px;
+    height: 25px;
+  }
+}
