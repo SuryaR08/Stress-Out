@@ -12,7 +12,7 @@ app.use(cors());
 const dbConfig = {
   host: process.env.MYSQL_HOST || "localhost",
   user: process.env.MYSQL_USER || "root",
-  password: process.env.MYSQL_PASSWORD || "Surya@08",
+  password: process.env.MYSQL_PASSWORD || "",
   database: process.env.MYSQL_DB || "peerhealhaven",
 };
 
